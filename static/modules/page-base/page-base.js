@@ -17,21 +17,24 @@ app.modules.PageBase = Backbone.View.extend({
             },
             home: function() {
                 self.$el.find('.nav-scroll-ref').parent().removeClass('active');
+                self.animating = true;
                 $('html, body').animate({
                     scrollTop: 0
-                }, 400);
+                }, 600, function() {
+                    self.animating = false;
+                });
             },
             links: function() {
                 self.$el.find('.nav-scroll-ref').parent().removeClass('active');
                 $('[href="'+ location.hash +'"]').parent().addClass('active');
+                self.animating = true;
                 $('html, body').animate({
-                    scrollTop: $(location.hash + '-scroll').offset().top
-                }, 400);
+                    scrollTop: $(location.hash + '-scroll').offset().top - 50
+                }, 600, function() {
+                    self.animating = false;
+                });
             }
         });
-
-        // TODO: Listen to scroll event
-        // and change nav accordingly
 
         this.router = new this.page_router();
         this.initializePage();
