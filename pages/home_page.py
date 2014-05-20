@@ -12,6 +12,9 @@ class MyPage(Page):
     return "Danny & Jason"
 
   JS_NAMES = ('static/pages/home-page/home-page.js',)
+  MUSTACHE_DICT = {
+    'home-page': file('static/pages/home-page/home-page.mustache').read()
+  }
 
 @route('/index.html')
 def route_home():

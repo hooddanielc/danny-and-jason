@@ -1,0 +1,14 @@
+.page-base .page-base-wrap {
+    max-width: 900px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.page-base .page-base-nav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.page-base .page-base-container {
+    margin-top: 50px;
+}
