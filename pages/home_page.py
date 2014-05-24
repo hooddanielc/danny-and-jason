@@ -12,6 +12,7 @@ class MyPage(Page):
     return "Danny & Jason"
 
   JS_NAMES = ('static/pages/home-page/home-page.js',)
+  CSS_NAMES = ('static/pages/home-page/home-page.css',)
   MUSTACHE_DICT = {
     'home-page': file('static/pages/home-page/home-page.mustache').read()
   }

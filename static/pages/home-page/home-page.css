@@ -1,0 +1,57 @@
+.home-page .img-title {
+    width: 80%;
+    display: block;
+    margin: 50px auto 20px;
+}
+.home-page .main-photo-center {
+    margin: 0px auto;
+    overflow: hidden;
+    width: 60%;
+    border-radius: 20px 20px 0 0;
+}
+.home-page .main-photo-center img {
+    width: 100%;
+}
+.home-page .flow-gradient {
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+    -moz-box-shadow:    0px 0px 15px 0px #e5e5e5;
+    -webkit-box-shadow: 0px 0px 15px 0px #e5e5e5;
+    box-shadow:         0px 0px 15px 0px #e5e5e5;
+    border-bottom: 1px solid #ccc;
+}
+.home-page .message-info {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+.home-page .title-section-pretty {
+    text-align: center;
+    padding: 100px;
+    background: url(img/sunset.jpg);
+    margin: 0;
+    background-position: 0 center;
+    text-shadow: 0px 0px 15px #000;
+    color: #fff;
+}
+.home-page .title-section-pretty p {
+    max-width: 300px;
+    margin: 0px auto;
+    font-size: 20px;
+}
+.home-page .row .img-decor-gannons {
+    height: 300px;
+    background: url(img/gannons.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px 0;
+}
+#accomodation-scroll {
+    height: 1000px;
+}

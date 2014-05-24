@@ -2,13 +2,26 @@
     max-width: 900px;
     margin: 0px auto;
     overflow: hidden;
+    padding: 0 15px;
 }
 .page-base .page-base-nav {
+    z-index: 1;
     width: 100%;
     position: fixed;
     left: 0;
     top: 0;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+
 }
 .page-base .page-base-container {
     margin-top: 50px;
+    -webkit-transition: margin 0.5s;
+    transition: margin 0.5s;
+}
+.page-base.header-hidden .page-base-nav {
+    top: -52px;
+}
+.page-base.header-hidden .page-base-container {
+    margin: 0;
 }

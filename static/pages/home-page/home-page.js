@@ -5,16 +5,23 @@ app.modules.HomePage = app.modules.PageBase.extend({
     renderPage: function() {
         // render the huge homepage mustache
         this.$elPage.html(app.mustache['home-page']);
-        
+
         // trigger router when scrolled to position
         var win = $(window);
         var self = this;
         win.on('scroll', function(e) {
+            var scroll_pos = win.scrollTop();
+            var els = self.$elPage.find('.trigger-scroll');
+            if(scroll_pos < 100) {
+                self.hideHeader();
+            } else {
+                self.showHeader();
+            }
+
             if(self.animating) {
                 return;
             }
-            var scroll_pos = win.scrollTop();
-            var els = self.$elPage.find('.trigger-scroll');
+
             if(scroll_pos < 300) {
                 self.$el.find('.nav-scroll-ref').parent().removeClass('active');
                 return;
