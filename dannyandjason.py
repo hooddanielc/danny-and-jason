@@ -12,5 +12,4 @@ def server_static(filepath):
 # uncomment this line to use bottle http server instead of wsgi
 run(host='0.0.0.0', port=888, debug=True)
 
-
 application = default_app()

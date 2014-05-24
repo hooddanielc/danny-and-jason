@@ -4,7 +4,6 @@ from string import Template
 from bottle import request, response
 import uuid
 
-
 def CssTag(name):
   return '<link rel="stylesheet" href="%s" />' % name
 
@@ -122,4 +121,3 @@ class Page(BodyBuilder):
     'static/main/third-party/underscore.min.js',
     'static/main/third-party/backbone.min.js'
   )
-
