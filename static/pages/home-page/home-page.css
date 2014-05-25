@@ -52,6 +52,17 @@
     background-repeat: no-repeat;
     margin: 20px 0;
 }
-#accomodation-scroll {
-    height: 1000px;
+.home-page .decor-accomodate-img img {
+    width: 100%;
+}
+.home-page .decor-accomodate-img {
+    overflow: hidden;
+    border-radius: 20px;
+}
+.home-page .decor-accomodate-text {
+    overflow: auto;
+    padding: 0 15px;
+}
+.home-page .accomodate-row {
+    padding: 20px 0;
 }
